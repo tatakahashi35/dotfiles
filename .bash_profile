@@ -2,8 +2,8 @@ echo hello! .bash_profile
 
 test -r $HOME/.bashrc && . $HOME/.bashrc
 
-#alias gcc="/usr/local/bin/gcc-8"
-#alias g++="/usr/local/bin/g++-8"
+alias gcc="/usr/local/bin/gcc-8"
+alias g++="/usr/local/bin/g++-8"
 
 export PATH="${PATH}:usr/local/bin"
 
