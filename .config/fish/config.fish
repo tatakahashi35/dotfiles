@@ -27,6 +27,7 @@ set PATH $PYENV_ROOT $PATH
 # my command
 set --export MY_COMMAND $HOME/command
 set PATH $MY_COMMAND/src $PATH
+set PATH $MY_COMMAND $PATH
 
 # right_prompt
 set -g theme_date_format "+%Y-%m-%d_%T"
@@ -36,4 +37,7 @@ set -g theme_date_format "+%Y-%m-%d_%T"
 
 
 
+#chromedriver
+set PATH $HOME/.chromedriver/chromedriver $PATH
 
+set --export ATCODER_TESTCASE $HOME/.atcoder-testcase

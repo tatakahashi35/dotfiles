@@ -1,0 +1,10 @@
+syntax on
+set clipboard+=unnamed
+set tabstop=4
+set shiftwidth=4
+set number
+set backspace=start,eol,indent
+set autoindent
+set smartindent
+set cursorline
+set backupskip=/tmp/*,/private/tmp/*
