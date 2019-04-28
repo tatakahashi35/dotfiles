@@ -4,6 +4,9 @@ end
 
 ############################################
 # path
+balias gcc /usr/local/bin/gcc-8
+balias g++ /usr/local/bin/g++-8
+
 # MySQL
 set PATH /usr/local/opt/mysql@5.7/bin $PATH
 
