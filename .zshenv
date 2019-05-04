@@ -21,9 +21,9 @@ export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
 export CPLUS_INCLUDE_PATH="$HOME/src/atcoder"
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv/shims"
-export PATH="$PYENV_ROOT:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv/shims"
+# export PATH="$PYENV_ROOT:$PATH"
+# eval "$(pyenv init -)"
 
 #chromedriver
 export CHOROMEDRIVER_PATH="$HOME/.chromedriver/chromedriver"

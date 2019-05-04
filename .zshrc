@@ -36,14 +36,31 @@ autoload history-search-end
 alias grep='grep --color'
 alias diff="coloddiff"
 
+#brew
+alias brwe_update_series='brew update && brew upgrade && brew cask upgrade'
 
 # git
 alias g="git"
 
 alias gs='git status'
+
+alias gb='git branch'
+alias gba='git branch -a'
+
+alias gd='git diff'
+
+alias gch='git checkout'
+alias gchb='git checkout -b'
+
+
 alias ga='git add'
-alias gc='git commit -m'
-alias gps='git push origin'
+
+alias gcm='git commit -m'
+
+alias gm='git merge'
+
+alias gpso='git push origin'
+
 alias gpl='git pull'
 alias gf='git fetch'
 
@@ -53,15 +70,6 @@ alias gl='git log --abbrev-commit --no-merges --date=short --date=iso'
 alias glg='git log --abbrev-commit --no-merges --date=short --date=iso --grep'
 # ローカルコミットを表示
 alias glc='git log --abbrev-commit --no-merges --date=short --date=iso origin/html..html'
-
-alias gd='git diff'
-alias gch='git checkout'
-alias gchb='git checkout -b'
-alias gb='git branch'
-alias gba='git branch -a'
-
-alias gm='git merge'
-
 
 
 
