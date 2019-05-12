@@ -12,6 +12,9 @@ export PATH="${PATH}:/usr/local/bin"
 export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin"
 
+#dotnet
+export PATH="/usr/local/share/dotnet:${PATH}"
+
 # mysql
 export PATH="${PATH}:/usr/local/opt/mysql@5.7/bin"
 export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
