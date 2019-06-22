@@ -39,5 +39,5 @@ export ATCODER_TESTCASE="$HOME/.atcoder-testcase"
 
 #####
 
-alias gcc="/usr/local/bin/gcc-8"
-alias g++="/usr/local/bin/g++-8"
+alias gcc="/usr/local/bin/gcc-9"
+alias g++="/usr/local/bin/g++-9"
