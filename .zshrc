@@ -37,7 +37,7 @@ alias grep='grep --color'
 alias diff="coloddiff"
 
 #brew
-alias brwe_update_series='brew update && brew upgrade && brew cask upgrade'
+alias brew_update_series='brew update && brew upgrade && brew cask upgrade'
 
 # git
 alias g="git"
