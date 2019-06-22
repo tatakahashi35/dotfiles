@@ -31,6 +31,7 @@ magicstack.MagicPython
 mechatroner.rainbow-csv
 mikegleasonjr.theme-go
 mkaufman.HTMLHint
+ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-mssql.mssql
 ms-python.python
@@ -40,7 +41,6 @@ ms-vscode.Go
 msyrus.go-doc
 oderwat.indent-rainbow
 patricklee.vsnotes
-PeterJausovec.vscode-docker
 PKief.material-icon-theme
 rebornix.ruby
 rogalmic.bash-debug
