@@ -72,4 +72,8 @@ alias glg='git log --abbrev-commit --no-merges --date=short --date=iso --grep'
 alias glc='git log --abbrev-commit --no-merges --date=short --date=iso origin/html..html'
 
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 
