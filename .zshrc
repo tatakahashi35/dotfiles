@@ -34,7 +34,7 @@ autoload history-search-end
 
 
 alias grep='grep --color'
-alias diff="coloddiff"
+# alias diff="coloddiff"
 
 #brew
 alias brew_update_series='brew update && brew upgrade && brew cask upgrade'
@@ -77,4 +77,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+# export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
