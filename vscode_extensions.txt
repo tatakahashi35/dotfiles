@@ -25,6 +25,7 @@ hnw.vscode-auto-open-markdown-preview
 humao.rest-client
 ionutvmi.path-autocomplete
 jithurjacob.nbpreviewer
+johnpapa.vscode-peacock
 kisstkondoros.vscode-gutter-preview
 kiteco.kite
 kogai.regex-railroad-diagrams

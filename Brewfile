@@ -28,6 +28,7 @@ brew "mecab-ipadic"
 brew "mono", link: false
 brew "mutt"
 brew "mycli"
+brew "protobuf"
 brew "mysql", restart_service: true
 brew "mysql-client"
 brew "nginx"
