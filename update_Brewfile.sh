@@ -1,5 +1,7 @@
 #!/usr/local/bin/zsh
 
-rm ~/Brewfile
+echo 'rm Brewfile'
+rm ./Brewfile
+
+echo 'create Brewfile'
 brew bundle dump
-brew bundle
