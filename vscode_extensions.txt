@@ -6,7 +6,7 @@ bung87.vscode-gemfile
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 chrmarti.regex
-CoenraadS.bracket-pair-colorizer
+CoenraadS.bracket-pair-colorizer-2
 CraigMaslowski.erb
 DavidAnson.vscode-markdownlint
 defaltd.go-coverage-viewer
@@ -52,6 +52,8 @@ PKief.material-icon-theme
 rogalmic.bash-debug
 RomanPeshkov.go-test-outline
 ryu1kn.partial-diff
+sadesyllas.vscode-workspace-switcher
+Shan.code-settings-sync
 shanoor.vscode-nginx
 shardulm94.trailing-spaces
 shd101wyy.markdown-preview-enhanced
