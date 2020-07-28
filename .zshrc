@@ -39,9 +39,6 @@ alias grep='grep --color'
 #brew
 alias brew_update_series='brew update && brew upgrade && brew cask upgrade'
 
-# ssh
-cat ~/.ssh/conf.d/* > ~/.ssh/config
-
 # git
 alias g="git"
 
