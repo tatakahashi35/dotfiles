@@ -42,5 +42,5 @@ alias graph_drawing="python $HOME/src/graph/main.py"
 
 #####
 
-alias gcc="/usr/local/bin/gcc-9"
-alias g++="/usr/local/bin/g++-9"
+alias gcc="/usr/local/bin/gcc-10"
+alias g++="/usr/local/bin/g++-10"

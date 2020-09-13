@@ -37,7 +37,7 @@ alias grep='grep --color'
 # alias diff="coloddiff"
 
 #brew
-alias brew_update_series='brew update && brew upgrade && brew cask upgrade'
+alias brew_update_series='brew update && brew upgrade && brew upgrade --cask'
 
 # git
 alias g="git"
@@ -84,3 +84,4 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PATH="/usr/local/sbin:$PATH"
