@@ -21,7 +21,7 @@ export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
 export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
 
 # bits/stdc++
-export CPLUS_INCLUDE_PATH="$HOME/src/atcoder"
+export CPLUS_INCLUDE_PATH="$HOME/atcoder"
 
 # pyenv
 # export PYENV_ROOT="$HOME/.pyenv/shims"
@@ -33,12 +33,12 @@ export CHOROMEDRIVER_PATH="$HOME/.chromedriver/chromedriver"
 export PATH="$CHOROMEDRIVER_PATH:$PATH"
 
 export MY_COMMAND="$HOME/command"
-export PATH="$MY_COMMAND/src:$MY_COMMAND:$PATH"
+export PATH="$MY_COMMAND:$MY_COMMAND:$PATH"
 
 export ATCODER_TESTCASE="$HOME/.atcoder-testcase"
-alias atcoder-testcases="python $HOME/src/atcoder_testcase/testcases.py"
+alias atcoder-testcases="python $HOME/atcoder_testcase/testcases.py"
 
-alias graph_drawing="python $HOME/src/graph/main.py"
+alias graph_drawing="python $HOME/graph/main.py"
 
 #####
 
