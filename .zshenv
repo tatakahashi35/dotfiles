@@ -36,7 +36,8 @@ export MY_COMMAND="$HOME/command"
 export PATH="$MY_COMMAND:$MY_COMMAND:$PATH"
 
 export ATCODER_TESTCASE="$HOME/.atcoder-testcase"
-alias atcoder-testcases="python $HOME/atcoder_testcase/testcases.py"
+alias atcoder-testcases="python $HOME/atcoder_testcase/main.py"
+alias atc="python $HOME/atcoder_testcase/main.py"
 
 alias graph_drawing="python $HOME/graph/main.py"
 
