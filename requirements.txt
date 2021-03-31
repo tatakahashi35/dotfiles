@@ -107,7 +107,7 @@ lazy-object-proxy==1.4.3
 ldap3==2.6.1
 lesscpy==0.14.0
 llvmlite==0.31.0
-lxml==4.5.0
+lxml==4.6.3
 Mako==1.1.1
 MarkupSafe==1.1.1
 marshmallow==3.5.0
