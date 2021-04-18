@@ -1,5 +1,46 @@
-echo hello! .zshrc
+# echo hello! .zshrc
 
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
+
+# c++
+# bits/stdc++
+export CPLUS_INCLUDE_PATH="$HOME/atcoder"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# go
+export GOPATH="${HOME}/go"
+export PATH="${PATH}:${GOPATH}/bin"
+
+#dotnet
+export PATH="/usr/local/share/dotnet:${PATH}"
+
+# mysql
+export PATH="${PATH}:/usr/local/opt/mysql@5.7/bin"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+
+#chromedriver
+export CHOROMEDRIVER_PATH="$HOME/.chromedriver/chromedriver"
+export PATH="$CHOROMEDRIVER_PATH:$PATH"
+
+# my command
+export MY_COMMAND="$HOME/command"
+export PATH="$MY_COMMAND:$MY_COMMAND:$PATH"
+
+# openssl
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PATH="/usr/local/sbin:$PATH"
+
+# zsh 設定
 setopt prompt_subst
 TMOUT=1
 TRAPALRM() {
@@ -32,7 +73,12 @@ setopt share_history
 
 autoload history-search-end
 
+# alias
+# c++
+alias gcc="/usr/local/bin/gcc-10 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
+alias g++="/usr/local/bin/g++-10 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
 
+# grep
 alias grep='grep --color'
 # alias diff="coloddiff"
 
@@ -70,18 +116,3 @@ alias gl='git log --abbrev-commit --no-merges --date=short --date=iso'
 alias glg='git log --abbrev-commit --no-merges --date=short --date=iso --grep'
 # ローカルコミットを表示
 alias glc='git log --abbrev-commit --no-merges --date=short --date=iso origin/html..html'
-
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-
-# export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export PATH="/usr/local/sbin:$PATH"

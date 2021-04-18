@@ -25,6 +25,7 @@ foxundermoon.shell-format
 golang.go
 Gruntfuggly.todo-tree
 hnw.vscode-auto-open-markdown-preview
+humao.rest-client
 ionutvmi.path-autocomplete
 jammerware.code-guid
 jebbs.plantuml
@@ -40,6 +41,7 @@ mkaufman.HTMLHint
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-python.python
+ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -49,6 +51,7 @@ ms-vscode.cpptools
 msyrus.go-doc
 oderwat.indent-rainbow
 PKief.material-icon-theme
+pustaczek.icie
 rogalmic.bash-debug
 RomanPeshkov.go-test-outline
 ryu1kn.partial-diff
@@ -59,6 +62,7 @@ shardulm94.trailing-spaces
 shd101wyy.markdown-preview-enhanced
 sianglim.slim
 slevesque.vscode-hexdump
+TabNine.tabnine-vscode
 VisualStudioExptTeam.vscodeintellicode
 vscode-icons-team.vscode-icons
 wholroyd.jinja

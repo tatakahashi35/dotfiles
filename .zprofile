@@ -1,2 +1,2 @@
-echo hello! .zshprofile
+# echo hello! .zprofile
 
