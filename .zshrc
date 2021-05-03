@@ -107,7 +107,7 @@ alias gm='git merge'
 
 alias gpso='git push origin'
 
-alias gpl='git pull'
+alias gplo='git pull origin'
 alias gf='git fetch'
 
 # logを見やすく
