@@ -11,7 +11,10 @@ export CPLUS_INCLUDE_PATH="$HOME/atcoder"
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init --path)"
+fi
+
 
 # go
 export GOPATH="${HOME}/go"
@@ -75,15 +78,15 @@ autoload history-search-end
 
 # alias
 # c++
-alias gcc="/usr/local/bin/gcc-10 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
-alias g++="/usr/local/bin/g++-10 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
+alias gcc="/usr/local/bin/gcc-11 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
+alias g++="/usr/local/bin/g++-11 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
 
 # grep
 alias grep='grep --color'
 # alias diff="coloddiff"
 
 #brew
-alias brew_update_series='brew update && brew upgrade && brew upgrade --cask'
+alias brew_update_series='brew update-reset && brew update && brew upgrade && brew upgrade --cask'
 
 # git
 alias g="git"
