@@ -6,8 +6,7 @@
 
 
 ## brew
-#### アプリの一覧を更新する
-- `brew install XXX` などで install
+#### Brewfile を更新する
 - `zsh update_Brewfile.sh`
 
 #### Brewfile を使ってインストールする
@@ -15,9 +14,8 @@
 
 
 ## vscode
-#### 拡張機能の一覧を更新する
-- vscode でinstallなどする
+#### install 済み extensions をファイルに書き出す
 - `zsh update_vscode_extensions.sh`
 
-#### vscode_extensions.txt を使ってインストールする
+#### extensions をインストールする
 - `zsh install_vscode_extensions.sh`

@@ -24,3 +24,6 @@ export CPLUS_INCLUDE_PATH="$HOME/src/atcoder"
 export PYENV_ROOT="$HOME/.pyenv/shims"
 export PATH="$PYENV_ROOT:$PATH"
 eval "$(pyenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+. "$HOME/.cargo/env"

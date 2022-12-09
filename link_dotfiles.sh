@@ -4,18 +4,19 @@ DOTFILES=dotfiles
 
 link() {
     # ホームディレクトリからレポジトリ内の dotfile に向けてリンクを張る
-    FILE=$1
-    ln -nfs ~/$DOTFILES/$FILE ~/$FILE
+    DIR=$1
+    FILE=$2
+    ln -nfs ~/$DOTFILES/$DIR/$FILE ~/$FILE
 }
 
 # zsh
-link .zprofile
-link .zshenv
-link .zshrc
+link zsh .zprofile
+link zsh .zshenv
+link zsh .zshrc
 
 # bash
-link .bash_profile
-link .bashrc
+link bash .bash_profile
+link bash .bashrc
 
 # vim
-link .vimrc
+link vim .vimrc
