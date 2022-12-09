@@ -119,3 +119,5 @@ alias gl='git log --abbrev-commit --no-merges --date=short --date=iso'
 alias glg='git log --abbrev-commit --no-merges --date=short --date=iso --grep'
 # ローカルコミットを表示
 alias glc='git log --abbrev-commit --no-merges --date=short --date=iso origin/html..html'
+
+export PATH="$HOME/.poetry/bin:$PATH"
