@@ -78,8 +78,8 @@ autoload history-search-end
 
 # alias
 # c++
-alias gcc="/usr/local/bin/gcc-11 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
-alias g++="/usr/local/bin/g++-11 -Wall -O2 -std=c++14 -I/usr/local/Cellar/boost/1.75.0_1"
+alias gcc="/usr/local/bin/gcc-12 -Wall -O2 -std=c++17 -I/usr/local/Cellar/boost/1.75.0_1 --sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk"
+alias g++="/usr/local/bin/g++-12 -Wall -O2 -std=c++17 -I/usr/local/Cellar/boost/1.75.0_1 --sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk"
 
 # grep
 alias grep='grep --color'
