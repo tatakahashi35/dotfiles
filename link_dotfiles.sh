@@ -1,3 +1,10 @@
+# shell
+# bash
+if [[ $LINK_BASH_CONFIG == "true" ]] then
+    ln -nfs ~/dotfiles/bash/.bash_profile ~/.bash_profile
+    ln -nfs ~/dotfiles/bash/.bashrc ~/.bashrc
+fi
+
 # zsh
 if [[ $LINK_ZSH_CONFIG == "true" ]] then
     ln -nfs ~/dotfiles/zsh/.zprofile ~/.zprofile
@@ -5,12 +12,7 @@ if [[ $LINK_ZSH_CONFIG == "true" ]] then
     ln -nfs ~/dotfiles/zsh/.zshrc ~/.zshrc
 fi
 
-# bash
-if [[ $LINK_BASH_CONFIG == "true" ]] then
-    ln -nfs ~/dotfiles/bash/.bash_profile ~/.bash_profile
-    ln -nfs ~/dotfiles/bash/.bashrc ~/.bashrc
-fi
-
+# editor
 # vim
 if [[ $LINK_VIM_CONFIG == "true" ]] then
     ln -nfs ~/dotfiles/vim/.vimrc ~/.vimrc
