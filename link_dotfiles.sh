@@ -1,26 +1,17 @@
-DOTFILES=dotfiles
-
-link() {
-    # ホームディレクトリからレポジトリ内の dotfile に向けてリンクを張る
-    DIR=$1
-    FILE=$2
-    ln -nfs ~/$DOTFILES/$DIR/$FILE ~/$FILE
-}
-
 # zsh
 if [[ $LINK_ZSH_CONFIG == "true" ]] then
-    link zsh .zprofile
-    link zsh .zshenv
-    link zsh .zshrc
+    ln -nfs ~/dotfiles/zsh/.zprofile ~/.zprofile
+    ln -nfs ~/dotfiles/zsh/.zshenv ~/.zshenv
+    ln -nfs ~/dotfiles/zsh/.zshrc ~/.zshrc
 fi
 
 # bash
 if [[ $LINK_BASH_CONFIG == "true" ]] then
-    link bash .bash_profile
-    link bash .bashrc
+    ln -nfs ~/dotfiles/bash/.bash_profile ~/.bash_profile
+    ln -nfs ~/dotfiles/bash/.bashrc ~/.bashrc
 fi
 
 # vim
 if [[ $LINK_VIM_CONFIG == "true" ]] then
-    link vim .vimrc
+    ln -nfs ~/dotfiles/vim/.vimrc ~/.vimrc
 fi
