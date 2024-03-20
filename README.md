@@ -16,6 +16,7 @@ This repository is for managing configuration files.
 - git
 
 # How to use
+## How to set dot files
 1. Set environment values
 ```
 # shell
@@ -33,3 +34,7 @@ LINK_GIT_CONFIG=true
 ```
 zsh link_dotfiles.sh
 ```
+
+## Refer following as well
+- [brew](https://github.com/tatakahashi35/dotfiles/tree/main/brew)
+- [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/vscode)
