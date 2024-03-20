@@ -8,13 +8,19 @@ link() {
 }
 
 # zsh
-link zsh .zprofile
-link zsh .zshenv
-link zsh .zshrc
+if [[ $LINK_ZSH_CONFIG == "true" ]] then
+    link zsh .zprofile
+    link zsh .zshenv
+    link zsh .zshrc
+fi
 
 # bash
-link bash .bash_profile
-link bash .bashrc
+if [[ $LINK_BASH_CONFIG == "true" ]] then
+    link bash .bash_profile
+    link bash .bashrc
+fi
 
 # vim
-link vim .vimrc
+if [[ $LINK_VIM_CONFIG == "true" ]] then
+    link vim .vimrc
+fi
