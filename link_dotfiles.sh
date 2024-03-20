@@ -1,5 +1,3 @@
-#!/usr/local/bin/zsh
-
 DOTFILES=dotfiles
 
 link() {
