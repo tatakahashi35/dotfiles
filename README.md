@@ -18,8 +18,11 @@ This repository is for managing configuration files.
 # How to use
 1. Set environment values
 ```
+# shell
 LINK_ZSH_CONFIG=true
 LINK_BASH_CONFIG=false
+
+# editor
 LINK_VIM_CONFIG=true
 ```
 
