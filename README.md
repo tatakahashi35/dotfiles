@@ -26,7 +26,7 @@ LINK_BASH_CONFIG=false
 LINK_VIM_CONFIG=true
 
 # other application
-LINK_GIT_CONFIG
+LINK_GIT_CONFIG=true
 ```
 
 2. Link configuration files from home directory
