@@ -91,33 +91,4 @@ alias brews='brew update-reset && brew update && brew upgrade && brew upgrade --
 # git
 alias g="git"
 
-alias gs='git status'
-
-alias gb='git branch'
-alias gba='git branch -a'
-
-alias gd='git diff'
-
-alias gch='git checkout'
-alias gchb='git checkout -b'
-
-
-alias ga='git add'
-
-alias gcm='git commit -m'
-
-alias gm='git merge'
-
-alias gpso='git push origin'
-
-alias gplo='git pull origin'
-alias gf='git fetch'
-
-# logを見やすく
-alias gl='git log --abbrev-commit --no-merges --date=short --date=iso'
-# grep
-alias glg='git log --abbrev-commit --no-merges --date=short --date=iso --grep'
-# ローカルコミットを表示
-alias glc='git log --abbrev-commit --no-merges --date=short --date=iso origin/html..html'
-
 export PATH="$HOME/.poetry/bin:$PATH"

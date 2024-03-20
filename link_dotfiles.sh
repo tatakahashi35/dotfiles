@@ -17,3 +17,9 @@ fi
 if [[ $LINK_VIM_CONFIG == "true" ]] then
     ln -nfs ~/dotfiles/vim/.vimrc ~/.vimrc
 fi
+
+# other application
+# git
+if [[ $LINK_GIT_CONFIG == "true" ]] then
+    ln -nfs ~/dotfiles/git/.gitconfig ~/.gitconfig
+fi

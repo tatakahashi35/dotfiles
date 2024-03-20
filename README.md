@@ -24,6 +24,9 @@ LINK_BASH_CONFIG=false
 
 # editor
 LINK_VIM_CONFIG=true
+
+# other application
+LINK_GIT_CONFIG
 ```
 
 2. Link configuration files from home directory

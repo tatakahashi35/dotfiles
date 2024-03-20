@@ -1,0 +1,32 @@
+[user]
+    name = {name}
+    email = {email}
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+
+[alias]
+    b = branch
+    ch = checkout
+    sw = switch
+    f = fetch
+
+    pl = pull
+    plo = pull origin
+    ps = push
+    pso = push origin
+
+    m = merge
+    cp = cherry-pick
+
+    st = stash -u
+    stl = stash list
+    sts = stash show
+    stp = stash pop
+
+    d = diff
+    dff = diff --word-diff
+
+    loo = log --oneline
+    log = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
