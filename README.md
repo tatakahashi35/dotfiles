@@ -20,14 +20,14 @@ This repository is for managing configuration files.
 1. Set environment values
 ```
 # shell
-LINK_ZSH_CONFIG=true
-LINK_BASH_CONFIG=false
+export LINK_ZSH_CONFIG=true
+export LINK_BASH_CONFIG=false
 
 # editor
-LINK_VIM_CONFIG=true
+export LINK_VIM_CONFIG=true
 
 # other application
-LINK_GIT_CONFIG=true
+export LINK_GIT_CONFIG=true
 ```
 
 2. Link configuration files from home directory
