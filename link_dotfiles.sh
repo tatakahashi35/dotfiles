@@ -22,4 +22,5 @@ fi
 # git
 if [[ $LINK_GIT_CONFIG == "true" ]] then
     ln -nfs ~/dotfiles/git/.gitconfig ~/.gitconfig
+    ln -nfs ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 fi
