@@ -30,7 +30,10 @@ export LINK_VIM_CONFIG=true
 export LINK_GIT_CONFIG=true
 ```
 
-2. Link configuration files from home directory
+2. Set git user if needed
+Set [[user]](https://github.com/tatakahashi35/dotfiles/blob/main/git/.gitconfig#L1-L3)
+
+3. Link configuration files from home directory
 ```
 zsh link_dotfiles.sh
 ```
