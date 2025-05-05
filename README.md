@@ -1,22 +1,8 @@
 # dotfiles
 This repository is for managing configuration files.
 
-# Directory
-## shell
-- bash
-- fish
-- zsh
-
-## editor
-- vim
-- vscode
-
-## other application
-- brew
-- git
-
 # How to use
-## How to set dot files
+## How to set configuration files
 1. Set environment values
     ```
     # shell
@@ -39,7 +25,7 @@ This repository is for managing configuration files.
     zsh link_dotfiles.sh
     ```
 
-## Refer following as well
+## How to install libraries
 - [brew](https://github.com/tatakahashi35/dotfiles/tree/main/brew)
 - [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/vscode)
 
