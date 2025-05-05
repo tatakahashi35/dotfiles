@@ -22,7 +22,7 @@ This repository is for managing configuration files.
 
 3. Link configuration files from home directory
     ```
-    zsh link_dotfiles.sh
+    zsh src/link_dotfiles.sh
     ```
 
 ## How to install libraries
