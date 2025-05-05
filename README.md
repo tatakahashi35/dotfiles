@@ -43,7 +43,7 @@ This repository is for managing configuration files.
 - [brew](https://github.com/tatakahashi35/dotfiles/tree/main/brew)
 - [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/vscode)
 
-## How to update library versions described in this repository
+## How to update libraries described in this repository
 1. Run this script then a new PR will be created.
     ```
     zsh src/update_libraries.sh
