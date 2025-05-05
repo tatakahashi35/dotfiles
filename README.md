@@ -42,3 +42,21 @@ This repository is for managing configuration files.
 ## Refer following as well
 - [brew](https://github.com/tatakahashi35/dotfiles/tree/main/brew)
 - [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/vscode)
+
+## How to update library versions described in this repository
+1. Run this script then a new PR will be created.
+    ```
+    zsh src/update_libraries.sh
+    ```
+2. Review and merge it.
+
+### Create the PR automatically
+1. Create a .plist file using template
+    ```
+    sed s:HOME:${HOME}:g src/template_update_libraries.plist > src/update_libraries.plist
+    ```
+2. copy .plist file
+    ```
+    cp src/update_libraries.plist ~/Library/LaunchAgents/com.github.tatakahashi35.dotfiles.update_libraries.plist
+    ```
+3. Add to launchd with referring https://zenn.dev/tata/articles/8ac2a832d77670.
