@@ -18,16 +18,16 @@ This repository is for managing configuration files.
 
 2. Set git user if needed
 
-   Set [[user]](https://github.com/tatakahashi35/dotfiles/blob/main/git/.gitconfig#L1-L3)
+   Set [[user]](https://github.com/tatakahashi35/dotfiles/blob/main/apps/git/.gitconfig#L1-L3)
 
-4. Link configuration files from home directory
+3. Link configuration files from home directory
     ```
     zsh link_dotfiles.sh
     ```
 
 ## How to install libraries
-- [brew](https://github.com/tatakahashi35/dotfiles/tree/main/brew)
-- [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/vscode)
+- [brew](https://github.com/tatakahashi35/dotfiles/tree/main/apps/brew)
+- [vscode](https://github.com/tatakahashi35/dotfiles/tree/main/apps/vscode)
 
 ## How to update libraries described in this repository
 1. Run this script then a new PR will be created.
