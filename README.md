@@ -37,7 +37,7 @@ This repository is for managing configuration files.
 2. Review and merge it.
 
 ### Create the PR automatically
-1. Create a .plist file using template
+1. Create .plist file using template
     ```
     sed s:HOME:${HOME}:g src/template_update_libraries.plist > src/update_libraries.plist
     ```

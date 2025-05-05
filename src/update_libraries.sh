@@ -9,16 +9,16 @@ git switch -c update_library
 
 # Update Library versions
 ## brew
-cd brew
+cd apps/brew
 zsh update_Brewfile.sh
 cd -
-git add brew/Brewfile
+git add apps/brew/Brewfile
 
 ## vscode
-cd vscode
+cd apps/vscode
 zsh update_vscode_extensions.sh
 cd -
-git add vscode/vscode_extensions.txt
+git add apps/vscode/vscode_extensions.txt
 
 # Push changes
 git commit -m "Update library versions"
