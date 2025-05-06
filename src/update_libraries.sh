@@ -1,3 +1,5 @@
+echo "Updating libraries ..."
+
 cd
 cd dotfiles
 
