@@ -43,6 +43,6 @@ This repository is for managing configuration files.
     ```
 2. copy .plist file
     ```
-    cp src/update_libraries.plist ~/Library/LaunchAgents/com.github.tatakahashi35.dotfiles.update_libraries.plist
+    sudo cp src/update_libraries.plist ~/Library/LaunchAgents/com.github.tatakahashi35.dotfiles.update_libraries.plist
     ```
 3. Add to launchd with referring https://zenn.dev/tata/articles/8ac2a832d77670.
