@@ -8,8 +8,17 @@
         <key>ProgramArguments</key>
         <array>
             <string>/bin/bash</string>
-            <string>HOME/dotfiles/src/update_libraries.sh</string>
+            <string>/Users/{USER}/dotfiles/src/update_libraries.sh</string>
         </array>
+        <key>UserName</key>
+        <string>{USER}</string>
+        <key>EnvironmentVariables</key>
+            <dict>
+                <key>PATH</key>
+                <string>/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin</string>
+                <key>GITHUB_TOKEN</key>
+                <string>{GITHUB_TOKEN}</string>
+            </dict>
         <key>StartCalendarInterval</key>
         <array>
             <dict>
@@ -18,8 +27,8 @@
             </dict>
         </array>
         <key>StandardOutPath</key>
-        <string>HOME/dotfiles/launchd/update_libraries.log</string>
+        <string>/Users/{USER}/dotfiles/launchd/update_libraries.log</string>
         <key>StandardErrorPath</key>
-        <string>HOME/dotfiles/launchd/update_libraries.err</string>
+        <string>/Users/{USER}/dotfiles/launchd/update_libraries.err</string>
     </dict>
 </plist>
