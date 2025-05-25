@@ -39,7 +39,7 @@ This repository is for managing configuration files.
 ### Create the PR automatically
 1. Create .plist file using template
     ```
-    sed s:HOME:${HOME}:g src/template_update_libraries.plist > src/update_libraries.plist
+    cat src/template_update_libraries.plist | sed s:{USER}:${USER}:g | sed s:{GITHUB_TOKEN}:XXX:g > src/update_libraries.plist
     ```
 2. copy .plist file
     ```
