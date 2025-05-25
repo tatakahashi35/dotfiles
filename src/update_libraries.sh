@@ -1,23 +1,24 @@
 set -e # exit when error
 set -x # debug mode
 
+WORKING_DIR=~/dotfiles_tmp
+
+function Clean_up () {
+    rm -rf $WORKING_DIR
+}
+
 echo "Start updating libraries ..."
 
-# Remove existing dotfiles_tmp directory and recreate it
-echo "Recreating dotfiles_tmp directory ..."
-rm -rf ~/dotfiles_tmp
-cp -r ~/dotfiles ~/dotfiles_tmp
-cd ~/dotfiles_tmp
-echo "Recreating dotfiles_tmp directory [Done]"
+# Clone dotfiles repository
+echo "Cloning dotfiles repository ..."
+mkdir -p $WORKING_DIR
+cd $WORKING_DIR
+git clone git@github.com:tatakahashi35/dotfiles.git
+echo "Cloning dotfiles repository [Done]"
 
 # Switch to the working branch
+cd dotfiles
 git pull origin main
-if [ `git branch --list update_library` ]; then
-    echo "update_library branch is already existing."
-    git branch -D update_library
-else
-    echo "update_library branch isn't existing."
-fi
 git switch -c update_library
 
 # Update Library versions
@@ -41,6 +42,7 @@ echo "Updating vscode [Done]"
 if git diff --cached --quiet; then
     echo "No changes added to commit"
     echo "Finish updating libraries"
+    Clean_up
     exit 0
 fi
 git commit -m "Update library versions"
@@ -50,5 +52,8 @@ git push -f origin update_library
 echo "Creating PR ..."
 gh pr create --base main --head update_library --title "Update library" --body "Update library"
 echo "Creating PR [Done]"
+
+# Clean up
+Clean_up
 
 echo "Completed updating libraries"
