@@ -25,6 +25,14 @@
                 <key>Weekday</key>
                 <integer>1</integer>
             </dict>
+            <dict>
+                <key>Hour</key>
+                <integer>8</integer>
+            </dict>
+            <dict>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
         </array>
         <key>StandardOutPath</key>
         <string>/Users/{USER}/dotfiles/launchd/update_libraries.log</string>
