@@ -3,6 +3,10 @@ set -x # debug mode
 
 WORKING_DIR=~/dotfiles_tmp
 
+function Clean_up () {
+    rm -rf $WORKING_DIR
+}
+
 echo "Start updating libraries ..."
 
 # Clone dotfiles repository
@@ -38,7 +42,7 @@ echo "Updating vscode [Done]"
 if git diff --cached --quiet; then
     echo "No changes added to commit"
     echo "Finish updating libraries"
-    rm -rf $WORKING_DIR
+    Clean_up
     exit 0
 fi
 git commit -m "Update library versions"
@@ -50,6 +54,6 @@ gh pr create --base main --head update_library --title "Update library" --body "
 echo "Creating PR [Done]"
 
 # Clean up
-rm -rf $WORKING_DIR
+Clean_up
 
 echo "Completed updating libraries"
