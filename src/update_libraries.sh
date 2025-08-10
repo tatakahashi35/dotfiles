@@ -4,7 +4,9 @@ set -x # debug mode
 WORKING_DIR=~/dotfiles_tmp
 
 function Clean_up () {
+    echo "Cleaning up working directory ..."
     rm -rf $WORKING_DIR
+    echo "Cleaning up working directory [Done]"
 }
 
 echo "Start updating libraries ..."
@@ -49,9 +51,14 @@ git commit -m "Update library versions"
 git push -f origin update_library
 
 # Create a pull request
-echo "Creating PR ..."
-gh pr create --base main --head update_library --title "Update library" --body "Update library"
-echo "Creating PR [Done]"
+if [ "`gh pr list --head update_library --json url,title`" = "[]" ]; then
+    echo "PR does not exist, creating a new one."
+    echo "Creating PR ..."
+    gh pr create --base main --head update_library --title "Update library" --body "Update library"
+    echo "Creating PR [Done]"
+else
+    echo "PR already exists, skipping creation."
+fi
 
 # Clean up
 Clean_up
