@@ -39,7 +39,7 @@ brew "mono", link: false
 brew "mutt"
 brew "mycli"
 brew "zlib"
-brew "mysql"
+brew "mysql", restart_service: :changed
 brew "mysql-client"
 brew "ndenv"
 brew "nginx"
