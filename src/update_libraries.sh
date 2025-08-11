@@ -3,20 +3,24 @@ set -x # debug mode
 
 WORKING_DIR=~/dotfiles_tmp
 
-function Clean_up () {
-    echo "Cleaning up working directory ..."
-    rm -rf $WORKING_DIR
-    echo "Cleaning up working directory [Done]"
+function Log () {
+    echo \[`date '+%Y/%m/%d %H:%M:%S'`\] $1
 }
 
-echo "Start updating libraries ..."
+function Clean_up () {
+    Log "Cleaning up working directory ..."
+    rm -rf $WORKING_DIR
+    Log "Cleaning up working directory [Done]"
+}
+
+Log "Start updating libraries ..."
 
 # Clone dotfiles repository
-echo "Cloning dotfiles repository ..."
+Log "Cloning dotfiles repository ..."
 mkdir -p $WORKING_DIR
 cd $WORKING_DIR
 git clone git@github.com:tatakahashi35/dotfiles.git
-echo "Cloning dotfiles repository [Done]"
+Log "Cloning dotfiles repository [Done]"
 
 # Switch to the working branch
 cd dotfiles
@@ -25,25 +29,25 @@ git switch -c update_library
 
 # Update Library versions
 ## brew
-echo "Updating brew ..."
+Log "Updating brew ..."
 cd apps/brew
 zsh update_Brewfile.sh
 cd -
 git add apps/brew/Brewfile
-echo "Updating brew [Done]"
+Log "Updating brew [Done]"
 
 ## vscode
-echo "Updating vscode ..."
+Log "Updating vscode ..."
 cd apps/vscode
 zsh update_vscode_extensions.sh
 cd -
 git add apps/vscode/vscode_extensions.txt
-echo "Updating vscode [Done]"
+Log "Updating vscode [Done]"
 
 # Push changes
 if git diff --cached --quiet; then
-    echo "No changes added to commit"
-    echo "Finish updating libraries"
+    Log "No changes added to commit"
+    Log "Finish updating libraries"
     Clean_up
     exit 0
 fi
@@ -52,15 +56,15 @@ git push -f origin update_library
 
 # Create a pull request
 if [ "`gh pr list --head update_library --json url,title`" = "[]" ]; then
-    echo "PR does not exist, creating a new one."
-    echo "Creating PR ..."
+    Log "PR does not exist, creating a new one."
+    Log "Creating PR ..."
     gh pr create --base main --head update_library --title "Update library" --body "Update library"
-    echo "Creating PR [Done]"
+    Log "Creating PR [Done]"
 else
-    echo "PR already exists, skipping creation."
+    Log "PR already exists, skipping creation."
 fi
 
 # Clean up
 Clean_up
 
-echo "Completed updating libraries"
+Log "Completed updating libraries"
