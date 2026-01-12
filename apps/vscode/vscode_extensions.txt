@@ -13,7 +13,6 @@ docker.docker
 donjayamanne.githistory
 donjayamanne.python-environment-manager
 donjayamanne.python-extension-pack
-dunstontc.vscode-go-syntax
 eamodio.gitlens
 emilast.logfilehighlighter
 eriklynd.json-tools
@@ -51,7 +50,6 @@ mikegleasonjr.theme-go
 mishkinf.goto-next-previous-member
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
-ms-ceintl.vscode-language-pack-ja
 ms-python.debugpy
 ms-python.isort
 ms-python.python
