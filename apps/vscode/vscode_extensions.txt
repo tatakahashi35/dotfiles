@@ -21,7 +21,6 @@ formulahendry.docker-explorer
 formulahendry.docker-extension-pack
 formulahendry.vscode-mysql
 foxundermoon.shell-format
-github.copilot
 github.copilot-chat
 golang.go
 graphql.vscode-graphql
