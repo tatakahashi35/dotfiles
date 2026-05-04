@@ -92,3 +92,6 @@ alias brews='brew update-reset && brew update && brew upgrade && brew upgrade --
 alias g="git"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# claude code
+export PATH="$HOME/.local/bin:$PATH"
