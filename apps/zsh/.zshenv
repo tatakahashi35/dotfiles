@@ -1,4 +1,4 @@
 # echo hello! .zshenv
 
 export PATH="${PATH}:/usr/local/bin"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
