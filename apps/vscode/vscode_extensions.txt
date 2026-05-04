@@ -1,7 +1,6 @@
 alefragnani.bookmarks
 anthropic.claude-code
 christian-kohler.path-intellisense
-github.copilot-chat
 github.vscode-pull-request-github
 hashicorp.terraform
 mechatroner.rainbow-csv
